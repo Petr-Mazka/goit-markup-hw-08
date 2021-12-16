@@ -29,12 +29,16 @@ ul{
 
 /* Хэдэр */
 
+.header-logo{
+    text-decoration: none;
+}
+
 .logo-web{
     color: var(--accent-text-color);
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.2;  
 }
 
 .logo-studio{
@@ -42,14 +46,15 @@ ul{
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.2;   
 }
 
 .nav-part{
     color: var(--title-text-color);
     font-weight: 500;
     line-height: 1.14;  
-    letter-spacing: 0.02em; 
+    letter-spacing: 0.02em;
+    text-decoration: none; 
 }
 
 .nav-part:hover,
@@ -62,6 +67,7 @@ ul{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .contacts-part:hover,
