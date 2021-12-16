@@ -27,7 +27,7 @@ body{
     color: var(--title-text-color);
 }
 
-ul{
+.list{
     list-style: none;
 }
 
@@ -156,6 +156,12 @@ ul{
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
+    cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus{
+    background: #188CE8;
 }
 
 /* Особенности */
@@ -201,6 +207,47 @@ ul{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+/* portfolio-html */
+
+.p-hidden-one,
+.p-hidden-two,
+.p-hidden-three{
+    display: none;
+}
+
+.p-sort-button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    background: #F5F4FA;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.p-sort-button:hover,
+.p-sort-button:focus{
+    color: #fff;
+    background-color: var(--accent-text-color);
+}
+
+.p-head{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.p-text{
+    font-size: 16px;
+    line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
