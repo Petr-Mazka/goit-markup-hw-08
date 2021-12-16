@@ -1,10 +1,4 @@
-/* Основное *
-Цвет доп. текста: #212121;
-Цвет основного текста: #757575;
-Синий: #2196F3;
-Герой: #2F303A;
-Фон : #FFFFFF
-*/
+/* Основное */
 
 :root{
     --primary-text-color: #757575;
@@ -13,6 +7,7 @@
     --hero-background-color: #2F303A;
     --hero-title-color: #fff;
     --accent-text-color: #2196F3;
+    --team-background-color: #F5F4FA;
 }
 
 body{
@@ -21,6 +16,15 @@ body{
     font-size: 14px;
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.03em;
+}
+
+.section-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
 }
 
 ul{
@@ -36,25 +40,28 @@ ul{
 .logo-web{
     color: var(--accent-text-color);
     font-family: "Raleway", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;  
+    line-height: 1.19; 
+    letter-spacing: 0.03em; 
 }
 
 .logo-studio{
     color: var(--title-text-color) ;
     font-family: "Raleway", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;   
+    line-height: 1.19;  
+    letter-spacing: 00.03em; 
 }
 
 .nav-part{
-    color: var(--title-text-color);
+    color: var(--title-text-color);    
     font-weight: 500;
-    line-height: 1.14;  
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .nav-part:hover,
@@ -65,6 +72,7 @@ ul{
 .contacts-part{
     color: var(--primary-text-color);
     font-weight: 500;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -74,6 +82,50 @@ ul{
 .contacts-part:focus{
     color: var(--accent-text-color);
 }
+
+/* Футер */
+
+.footer{
+    background-color: var(--hero-background-color);
+}
+
+.footer-logo-studio{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #fff;
+}
+
+.footer-logo{
+    text-decoration: none;
+}
+
+.footer-link-map{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.f-link:hover,
+.f-link:focus{
+    color: var(--accent-text-color);
+}
+
+/* index.html */
 
 /* Герой */
 
@@ -92,21 +144,63 @@ ul{
 }
 
 .hero-button{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    background-color: var(--accent-text-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;;
     color: var(--hero-title-color);
+    background-color: #2196F3;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
+/* Особенности */
 
+.hidden-one{
+    display: none;
+}
 
+.main-qualities-head{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.main-qualities-text{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+/* Род занятий */
+
+/* Наша команда */
+
+.section-team{
+    background-color: var(--team-background-color);
+}
+
+.team-images-head{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.team-images-text{
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
