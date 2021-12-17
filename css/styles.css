@@ -157,6 +157,7 @@ body{
     left: 50%;
     transform: translate(-50%, 0);
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
 }
 
 .hero-button:hover,
@@ -229,6 +230,7 @@ body{
     background: #F5F4FA;
     border-radius: 4px;
     cursor: pointer;
+    font-family: "Roboto",sans-serif;
 }
 
 .p-sort-button:hover,
