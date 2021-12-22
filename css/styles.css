@@ -74,8 +74,37 @@ body{
     border: 1px solid #ECECEC;
 }
 
+.header-contacts{
+    display: flex;
+    margin-left: auto;
+}
+
+.nav{
+    display: flex;
+}
+
+.contact-item:not(:last-child){
+    margin-right: 50px;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:not(:last-child){
+    margin-right: 50px;
+}
+
 .header-logo{
     text-decoration: none;
+    display: flex;
+    margin-right: 93px;
 }
 
 .logo-web{
@@ -183,7 +212,7 @@ body{
 .hero{
     background-color: var(--hero-background-color);
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 200px; 
 }
 
 .hero-title{
@@ -225,6 +254,19 @@ body{
 
 /* Особенности */
 
+.main-qualities{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quality{
+    max-width: 270px;
+}
+
+.quality:not(:last-child){
+    margin-right: 30px;
+}
+
 .hidden-one{
     position: absolute;
     white-space: nowrap;
@@ -255,13 +297,35 @@ body{
     color: var(--primary-text-color);
 }
 
+.qualities{
+    padding-bottom: 47px;
+}
+
 /* Род занятий */
+
+.activity-image:not(:last-child){
+    margin-right: 30px;
+}
+
+.activity{
+    padding-top: 47px;
+}
 
 .section-title{
     margin-bottom: 50px;
 }
 
+.activity-images{
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Наша команда */
+
+.team-images{
+    display: flex;
+    justify-content:space-between ;
+}
 
 .section-team{
     background-color: var(--team-background-color);   
@@ -269,6 +333,10 @@ body{
 
 .t-img{
     margin-bottom: 30px;
+}
+
+.t-img:not(:last-child){
+    margin-right: 30px;
 }
 
 .team-images-head{
@@ -324,6 +392,12 @@ body{
 
 .p-buttons{
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.p-button:not(:last-child){
+    margin-right: 8px;
 }
 
 .p-sort-button:hover,
@@ -334,7 +408,11 @@ body{
 }
 
 .p-img{
-    margin-bottom: 20px;
+   
+}
+
+.p-img:not(:nth-child(3n + 3)){
+    margin-right: 30px;
 }
 
 .p-head{
@@ -351,4 +429,9 @@ body{
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+}
+
+.p-main-images{
+    display: flex;
+    flex-wrap: wrap;
 }

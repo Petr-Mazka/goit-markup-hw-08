@@ -16,23 +16,24 @@
 <body> 
     <!--Хэдэр-->  
     <header class="header">
-        <div class="container">
-        <nav>
+        <div class="container header-container">
+        <nav class="nav">
           <a href="./index.html" class="header-logo">
           <span lang="en" class="logo-web">Web</span><span lang="en" class="logo-studio">Studio</span>
           </a>
         <ul class="header-nav list">
-            <li><a  href="./index.html" class="nav-part">Студия</a></li>
-            <li><a href="./portfolio.html" class="nav-part">Портфолио</a></li>
-            <li><a href="" class="nav-part">Контакты</a></li>        
+            <li class="nav-item"><a  href="./index.html" class="nav-part">Студия</a></li>
+            <li class="nav-item"><a href="./portfolio.html" class="nav-part">Портфолио</a></li>
+            <li class="nav-item"><a href="" class="nav-part">Контакты</a></li>        
         </ul>
         </nav>
         <ul class="header-contacts list">
-             <li><a href="mailto:info@devstudio.com" class="contacts-part">info@devstudio.com</a></li>
-             <li><a href="tel:+380961111111" class="contacts-part">+38 096 111 11 11</a></li>
+             <li class="contact-item"><a href="mailto:info@devstudio.com" class="contacts-part">info@devstudio.com</a></li>
+             <li class="contact-item"><a href="tel:+380961111111" class="contacts-part">+38 096 111 11 11</a></li>
         </ul>
         </div>
     </header>
+ <main>
     <!--Мэин-->
         <main>
         <section class="p-main section">
@@ -41,59 +42,77 @@
             <h1 class="p-hidden-one">Портфолио</h1>
             <h2 class="p-hidden-two">Кнопки</h2>
             <ul class="p-buttons list">
-                <li><button type="button" class="p-sort-button">Все</button></li>
-                <li><button type="button" class="p-sort-button">Веб-сайты</button></li>
-                <li><button type="button" class="p-sort-button">Приложения</button></li>
-                <li><button type="button" class="p-sort-button">Дизайн</button></li>
-                <li><button type="button" class="p-sort-button">Маркетинг</button></li>
+                <li class="p-button"><button type="button" class="p-sort-button">Все</button></li>
+                <li class="p-button"><button type="button" class="p-sort-button">Веб-сайты</button></li>
+                <li class="p-button"><button type="button" class="p-sort-button">Приложения</button></li>
+                <li class="p-button"><button type="button" class="p-sort-button">Дизайн</button></li>
+                <li class="p-button"><button type="button" class="p-sort-button">Маркетинг</button></li>
             </ul>       
     <!--Картинки-->
             <h2 class="p-hidden-three">Картинки</h2>
             <ul class="p-main-images list">
-                <li>
-                    <img src="./images/portfolio-1-jpeg.jpg" alt="Ноутбук и сайт" width="370" class="p-img">
+                <li class="p-img">
+                    <img src="./images/portfolio-1-jpeg.jpg" alt="Ноутбук и сайт" width="370">
+                    <div class="info">
                     <h3 class="p-head">Технокряк</h3>
                     <p class="p-text">Веб-сайт</p>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/portfolio-9-jpeg.jpg" alt="Постер с баскетболистами" width="370" class="p-img">
+                <li class="p-img">
+                    <img src="./images/portfolio-9-jpeg.jpg" alt="Постер с баскетболистами" width="370">
+                    <div class="info">
                     <h3 class="p-head">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
                     <p class="p-text">Дизайн</p>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/portfolio-8-jpeg.jpg" alt="Логотип ресторана" width="370" class="p-img">
+                <li class="p-img">
+                    <img src="./images/portfolio-8-jpeg.jpg" alt="Логотип ресторана" width="370">
+                    <div class="info">
                     <h3 class="p-head">Ресторан <span lang="en">Seafood</span></h3>
                     <p class="p-text">Приложение</p>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/portfolio-7-jpeg.jpg" alt="Наушники" width="370" class="p-img">
+                <li class="p-img">
+                    <img src="./images/portfolio-7-jpeg.jpg" alt="Наушники" width="370">
+                    <div class="info">
                     <h3 class="p-head">Проект <span lang="en">Prime</span></h3>
                     <p class="p-text">Маркетинг</p>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/portfolio-6-jpeg.jpg" alt="Коробки" width="370" class="p-img">
+                <li class="p-img">
+                    <img src="./images/portfolio-6-jpeg.jpg" alt="Коробки" width="370">
+                    <div class="info"></div>
                     <h3 class="p-head">Проект <span lang="en">Boxes</span></h3>
                     <p class="p-text">Приложение</p>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/portfolio-5-jpeg.jpg" alt="Компьютер" width="370" class="p-img">
+                <li class="p-img">
+                    <img src="./images/portfolio-5-jpeg.jpg" alt="Компьютер" width="370">
+                    <div class="info">
                     <h3 lang="en" class="p-head">Inspiration has no Borders</h3>
                     <p class="p-text">Веб-сайт</p>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/portfolio-4-jpeg.jpg" alt="Книга" width="370" class="p-img">
+                <li class="p-img">
+                    <img src="./images/portfolio-4-jpeg.jpg" alt="Книга" width="370">
+                    <div class="info">
                     <h3 class="p-head">Издание <span lang="en">Limited Edition</span></h3>
                     <p class="p-text">Дизайн</p>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/portfolio-3-jpeg.jpg" alt="Бирка" width="370" class="p-img">
+                <li class="p-img">
+                    <img src="./images/portfolio-3-jpeg.jpg" alt="Бирка" width="370">
+                    <div class="info">
                     <h3 class="p-head">Проект <span lang="en">LAB</span></h3>
                     <p class="p-text">Маркетинг</p>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/portfolio-2-jpeg.jpg" alt="Ноутбук, руки и очки" width="370" class="p-img">
+                <li class="p-img">
+                    <img src="./images/portfolio-2-jpeg.jpg" alt="Ноутбук, руки и очки" width="370">
+                    <div class="info">
                     <h3 lang="en" class="p-head">Growing Business</h3>
                     <p class="p-text">Приложение</p>
+                    </div>
                 </li>
             </ul>
             </div>
