@@ -31,6 +31,11 @@ img {
     height: auto;
   }
 
+  .section{
+      padding-top: 94px;
+      padding-bottom: 94px;
+  }
+
   .container {
     width: 1200px;
     padding-left: 15px;
@@ -219,11 +224,6 @@ body{
     margin: -1px;
 }
 
-.main-qualities{
-    padding-top: 94px;
-    padding-bottom: 47px;
-}
-
 .main-qualities-head{
     font-weight: 700;
     font-size: 14px;
@@ -242,17 +242,10 @@ body{
 
 /* Род занятий */
 
-.activity{
-    padding-top: 47px;
-    padding-bottom: 94px;
-}
-
 /* Наша команда */
 
 .section-team{
-    background-color: var(--team-background-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
+    background-color: var(--team-background-color);   
 }
 
 .team-images-head{
@@ -273,11 +266,6 @@ body{
 }
 
 /* portfolio-html */
-
-.p-main{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .p-hidden-one,
 .p-hidden-two,
