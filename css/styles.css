@@ -42,7 +42,6 @@ img {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px dashed blue;
   }
 
 body{
@@ -322,6 +321,10 @@ body{
 
 /* Наша команда */
 
+.t-img{
+    background-color: var(--main-background-color);
+}
+
 .team-images{
     display: flex;
     justify-content:space-between ;
@@ -331,7 +334,7 @@ body{
     background-color: var(--team-background-color);   
 }
 
-.t-img{
+.t-part{
     margin-bottom: 30px;
 }
 
@@ -355,6 +358,7 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-bottom: 30px;
 }
 
 /* portfolio-html */
@@ -407,13 +411,20 @@ body{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.p-img{
-   
+.info{
+    padding: 20px 24px;
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .p-img:not(:nth-child(3n + 3)){
     margin-right: 30px;
 }
+
+.p-img:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
 
 .p-head{
     font-weight: 700;
