@@ -227,6 +227,61 @@ body{
     color: var(--accent-text-color);
 }
 
+.join-list{
+    display: flex;
+    justify-content: center;
+}
+
+.join-link{
+    width: 44px;
+    height: 44px;
+    background-color: var(--join-link-bgc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 16px;
+}
+
+.join-link:hover,
+.join-link:focus{
+    background-color: var(--accent-text-color);
+}
+
+.join-link:hover .join-link-icon,
+.join-link:focus .join-link-icon{
+    fill: #fff;
+}
+
+.join-link-icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--main-background-color);
+}
+
+.join-contacts-part:not(:last-child){
+    margin-right: 10px;
+}
+
+.footer > .container{
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-join{
+    margin-left: 70px;
+}
+
+.join-text{
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+}
+
 /* index.html */
 
 /* Герой */
