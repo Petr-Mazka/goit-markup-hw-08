@@ -542,13 +542,14 @@ body{
     justify-content: center;
 }
 
-.clients-list-part{
+.client-link{
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    padding-top: 16px;
-    padding-right: 32px;
-    padding-bottom: 16px;
-    padding-left: 32px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .clients-list-part:not(:last-child){
@@ -561,13 +562,13 @@ body{
     fill: var(--team-icon-color);
 }
 
-.clients-list-part:hover,
-.clients-list-part:focus{
+.client-link:hover,
+.client-link:focus{
     border-color: var(--accent-text-color);
 }
 
-.clients-list-part:hover .client-icon,
-.clients-list-part:focus .client-icon{
+.client-link:hover .client-icon,
+.client-link:focus .client-icon{
     fill: var(--accent-text-color);
 }
 
