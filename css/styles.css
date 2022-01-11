@@ -68,12 +68,25 @@ body{
     list-style: none;
 }
 
+a,
+svg,
+button{
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.p-img{
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Хэдэр */
 
 .header{
     padding-top: 24px;
     padding-bottom: 25px;
     border: 1px solid #ECECEC;
+    height: 80px;
 }
 
 .header-contacts{
@@ -174,6 +187,38 @@ body{
 .contacts-part:hover .contact-icon,
 .contacts-part:focus .contact-icon{
     fill: var(--accent-text-color);
+}
+
+.main-page{
+    color: var(--accent-text-color);
+    position: relative;
+}
+
+.main-page::after{
+    content:'';
+    position: absolute;
+    width: 48.63px;
+    height: 4px;
+    background-color: var(--accent-text-color);
+    border-radius: 2px;
+    left: 0;
+    top: 45px;
+}
+
+.portfolio-page{
+    color: var(--accent-text-color);
+    position: relative;
+}
+
+.portfolio-page::after{
+    content:'';
+    position: absolute;
+    width: 76.66px;
+    height: 4px;
+    background-color: var(--accent-text-color);
+    border-radius: 2px;
+    left: 0;
+    top: 45px;
 }
 
 /* Футер */
@@ -451,6 +496,29 @@ body{
 .activity-images{
     display: flex;
     justify-content: space-between;
+}
+
+.activity-image{
+    position: relative;
+    display: flex;
+}
+
+.activity-text{
+    display: flex;
+    position: absolute;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--hero-title-color);
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Наша команда */
