@@ -360,30 +360,50 @@
             <div class="form-field user-info">
             <label for="name" class="label-name">
                 Имя
-                <input type="text" id="name" name="user-name" class="input-name">
+                <input type="text" id="name" name="user-name" class="input-name" placeholder="">
+                <span class="input-icon">
+                <svg class="name-form-icon form-icon">
+                    <use href="./images/icons.svg#icon-name-form"></use>
+                </svg>
+                </span>
             </label>
             </div>
             <div class="form-field user-info">
             <label for="tel-number" class="label-name">
                 Телефон
-                <input type="tel" id="tel-number" name="user-tel" class="input-name">
+                <input type="tel" id="tel-number" name="user-tel" class="input-name" placeholder="">
+                <span class="input-icon">
+                <svg class="tel-form-icon form-icon">
+                    <use href="./images/icons.svg#icon-tel-form"></use>
+                </svg>
+                </span>
             </label>
             </div>
             <div class="form-field user-info">
             <label for="mail" class="label-name">
                 Почта
-                <input type="email" id="mail" name="user-email" class="input-name">
+                <input type="email" id="mail" name="user-email" class="input-name" placeholder="">
+                <span class="input-icon">
+                <svg class="mail-form-icon form-icon">
+                    <use href="./images/icons.svg#icon-mail-form"></use>
+                </svg>
+                </span>
             </label>
             </div>
             <div class="form-field">
             <label for="comment" class="label-name"> Комментарий
-                <textarea name="comment" id="comment" class="comment"></textarea>
+                <textarea name="comment" id="comment" class="comment" placeholder="Введите текст"></textarea>
             </label>
             </div>
             <div class="form-agreement">
-            <label for="agreement" class="checkbox-container ">
+            <label for="agreement agreement-label" class="checkbox-container ">
                 <input type="checkbox" id="agreement" name="agree" class="agreement">
-                <span>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
+                <span class="agree-icon input-icon">
+                    <svg class="checkbox-icon ">
+                        <use href="./images/icons.svg#icon-agree"></use>
+                    </svg>
+                </span>
+                <span>Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-link">Условия договора</a></span>
             </label>
             </div>
             </div>
