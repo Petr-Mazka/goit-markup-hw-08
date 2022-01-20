@@ -954,6 +954,27 @@ button{
     color: #757575;
     align-items: center;
     display: flex;
+    justify-content: center;
+}
+
+.check-icon{
+    width: 16px;
+    height: 15px;
+    opacity: 0;
+    position: absolute;
+}
+
+.agreement:checked + .agree-icon .check-icon{
+    opacity: 1;
+    transition-duration: var(--primary-tzn-duration);
+    transition-timing-function: var(--primary-tzn-tfunction);
+}
+
+.agreement:checked + .agree-icon{
+    border-color: #2196F3;
+    background-color: #2196F3;
+    transition-duration: var(--primary-tzn-duration);
+    transition-timing-function: var(--primary-tzn-tfunction);
 }
 
 .agreement{
@@ -985,12 +1006,7 @@ button{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-}
-
-.checkbox-icon{
-    width: 11px;
-    height: 8px;
-    position: absolute;
+    box-sizing: border-box;
 }
 
 .name-form-icon{
