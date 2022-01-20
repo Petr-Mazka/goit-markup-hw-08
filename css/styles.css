@@ -389,6 +389,12 @@ button{
     text-align: left;
     padding-left: 29px;
     margin-left: 12px;
+    cursor: pointer;
+}
+
+.mailing-button:hover,
+.mailing-button:focus{
+    background-color: #188CE8;
 }
 
 .mailing-button::after{
