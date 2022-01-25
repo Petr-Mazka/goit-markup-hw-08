@@ -896,6 +896,11 @@ button{
     right: 8px;
 }
 
+.modal-button:focus,
+.modal-button:hover{
+    background-image: url(../images/svg/close.hover.svg);
+}
+
 .is-hidden {
     opacity: 0;
     pointer-events: none;
