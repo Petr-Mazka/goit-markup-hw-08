@@ -1,9 +1,5 @@
 // -=-> РОД ЗАНЯТИЙ
 
-.activity-image:not(:last-child){
-    margin-right: 30px;
-}
-
 .activity{
     padding-top: 47px;
 }
@@ -20,6 +16,9 @@
 .activity-image{
     position: relative;
     display: flex;
+    &:not(:last-child){
+        margin-right: 30px;
+    }
 }
 
 .activity-text{

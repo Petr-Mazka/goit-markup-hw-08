@@ -18,8 +18,10 @@
     align-items: center;
 }
 
-.contact-item:not(:last-child){
+.contact-item{
+    &:not(:last-child){
     margin-right: 50px;
+    }
 }
 
 .header-nav{
@@ -32,8 +34,10 @@
     align-items: center;
 }
 
-.nav-item:not(:last-child){
+.nav-item{
+    &:not(:last-child){
     margin-right: 50px;
+    }
 }
 
 .header-logo{
@@ -67,11 +71,9 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-}
-
-.nav-part:hover,
-.nav-part:focus{
-    color: var(--accent-text-color);
+    &:hover, &:focus{
+        color: var(--accent-text-color);
+    }
 }
 
 .contacts-part{
@@ -81,11 +83,12 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-}
-
-.contacts-part:hover,
-.contacts-part:focus{
-    color: var(--accent-text-color);
+    &:hover, &:focus{
+        color: var(--accent-text-color);
+    }
+    &:hover .contact-icon, &:focus .contact-icon{
+        fill: var(--accent-text-color);
+    }
 }
 
 .c-icon-one{
@@ -102,23 +105,17 @@
     fill: var(--team-icon-color);
 }
 
-.contacts-part:hover .contact-icon,
-.contacts-part:focus .contact-icon{
-    fill: var(--accent-text-color);
-}
-
 .main-page{
     color: var(--accent-text-color);
     position: relative;
-}
-
-.main-page::after{
-    content:'';
-    position: absolute;
-    width: 48.63px;
-    height: 4px;
-    background-color: var(--accent-text-color);
-    border-radius: 2px;
-    left: 0;
-    top: 45px;
+    &::after{
+        content:'';
+        position: absolute;
+        width: 48.63px;
+        height: 4px;
+        background-color: var(--accent-text-color);
+        border-radius: 2px;
+        left: 0;
+        top: 45px;  
+    }
 }

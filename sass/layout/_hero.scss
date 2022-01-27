@@ -42,10 +42,8 @@
     border: none;
     border-radius: 4px;
     padding: 10px 32px;
-}
-
-.hero-button:hover,
-.hero-button:focus{
-    background: #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover, &:focus{
+        background: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }

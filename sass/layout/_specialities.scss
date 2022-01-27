@@ -7,9 +7,13 @@
 
 .quality{
     max-width: 270px;
+    &:not(:last-child){
+        margin-right: 30px;
+    }
 }
 
-.first-quality::before{
+.first-quality{
+    &::before{
     display: block;
     height: 120px;
     content: '';
@@ -19,9 +23,11 @@
     background-image: url(../images/svg/antenna1.svg);
     background-repeat: no-repeat;
     background-position: center;
+    }
 }
 
-.second-quality::before{
+.second-quality{
+    &::before{
     display: block;
     height: 120px;
     content: '';
@@ -31,9 +37,11 @@
     background-image: url(../images/svg/clock1.svg);
     background-repeat: no-repeat;
     background-position: center;
+    }
 }
 
-.third-quality::before{
+.third-quality{
+    &::before{
     display: block;
     height: 120px;
     content: '';
@@ -43,9 +51,11 @@
     background-image: url(../images/svg/diagram1.svg);
     background-repeat: no-repeat;
     background-position: center;
+    }
 }
 
-.fourth-quality::before{
+.fourth-quality{
+    &::before{
     display: block;
     height: 120px;
     content: '';
@@ -55,10 +65,7 @@
     background-image: url(../images/svg/astronaut1.svg);
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.quality:not(:last-child){
-    margin-right: 30px;
+    }
 }
 
 .main-qualities-head{

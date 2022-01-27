@@ -4,6 +4,10 @@
     background-color: var(--hero-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    & > .container{
+        display: flex;
+        align-items: baseline;
+        }
 }
 
 .footer-nav{
@@ -45,9 +49,10 @@
     text-decoration: none;
 }
 
-.f-link:hover,
-.f-link:focus{
-    color: var(--accent-text-color);
+.f-link{
+    &:hover, &:focus{
+        color: var(--accent-text-color);
+    }
 }
 
 .join-list{
@@ -64,16 +69,12 @@
     align-items: center;
     border-radius: 50%;
     margin-top: 16px;
-}
-
-.join-link:hover,
-.join-link:focus{
-    background-color: var(--accent-text-color);
-}
-
-.join-link:hover .join-link-icon,
-.join-link:focus .join-link-icon{
-    fill: #fff;
+    &:hover, &:focus{
+        background-color: var(--accent-text-color);
+    }
+    &:hover .join-link-icon, &:focus .join-link-icon{
+        fill: #fff;
+    }
 }
 
 .join-link-icon{
@@ -82,13 +83,10 @@
     fill: var(--main-background-color);
 }
 
-.join-contacts-part:not(:last-child){
+.join-contacts-part{
+    &:not(:last-child){
     margin-right: 10px;
-}
-
-.footer > .container{
-    display: flex;
-    align-items: baseline;
+    }
 }
 
 .footer-join{
@@ -132,15 +130,14 @@
     padding-left: 16px;
     color: white;
     margin-top: 20px;
-}
-
-.mail-input::placeholder{
-    font-size: 16px;
-    line-height: 1.25;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    &::placeholder{
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
 .mailing-button{
@@ -160,14 +157,10 @@
     padding-left: 29px;
     margin-left: 12px;
     cursor: pointer;
-}
-
-.mailing-button:hover,
-.mailing-button:focus{
-    background-color: #188CE8;
-}
-
-.mailing-button::after{
+    &:hover, &:focus{
+        background-color: #188CE8;
+    }
+    &::after{
     content: '';
     width: 24px;
     height: 24px;
@@ -178,4 +171,5 @@
     right: 28px;
     top: 13px;
     bottom: 13px;
+    }
 }

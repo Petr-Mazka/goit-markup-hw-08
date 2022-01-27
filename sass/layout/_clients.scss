@@ -14,24 +14,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    &:hover, &:focus{
+        border-color: var(--accent-text-color);
+    }
+    &:hover .client-icon, &:focus .client-icon{
+        fill: var(--accent-text-color);
+    }
 }
 
-.clients-list-part:not(:last-child){
+.clients-list-part{
+    &:not(:last-child){
     margin-right: 30px;
+    }
 }
 
 .client-icon{
     width: 106px;
     height: 60px;
     fill: var(--team-icon-color);
-}
-
-.client-link:hover,
-.client-link:focus{
-    border-color: var(--accent-text-color);
-}
-
-.client-link:hover .client-icon,
-.client-link:focus .client-icon{
-    fill: var(--accent-text-color);
 }
