@@ -7,7 +7,7 @@
     border-bottom: 1px solid #eeeeee;
 }
 
-.p-img{
+.p-main-images__img{
     transition-duration: var(--primary-tzn-duration);
     transition-timing-function: var(--primary-tzn-tfunction);
     &:not(:nth-child(3n + 3)){
@@ -27,6 +27,9 @@
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
+}
+
+.info__head{
     margin-bottom: 4px;
 }
 
@@ -42,11 +45,11 @@
     flex-wrap: wrap;
 }
 
-.p-img-link{
+.p-main-images__link{
     text-decoration: none;
 }
 
-.card-img{
+.thumb__img{
     display: block;
 }
 
@@ -85,7 +88,7 @@
     color: #fff;
 }
 
-.portfolio-page{
+.portfolio-page--modifier{
     color: var(--accent-text-color);
     position: relative;
     &::after{

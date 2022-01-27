@@ -1,6 +1,6 @@
 // -=-> НАША КОМАНДА
 
-.t-img{
+.team-images__item{
     background-color: var(--main-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -14,11 +14,11 @@
     justify-content:space-between ;
 }
 
-.section-team{
+.team-section{
     background-color: var(--team-background-color);  
 }
 
-.team-images-head{
+.team-images__head{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -28,7 +28,7 @@
     margin-bottom: 10px;
 }
 
-.team-images-text{
+.team-images__text{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -47,7 +47,7 @@
     justify-content: center;
 }
 
-.team-link{
+.team-contacts__link{
     width: 44px;
     height: 44px;
     background-color: #fff;
@@ -59,19 +59,23 @@
     &:hover, &:focus{
         background-color: var(--accent-text-color);
     }
-    &:hover .team-link-icon, &:focus .team-link-icon{
+    &:hover .team-contacts__icon, &:focus .team-contacts__icon{
         fill: #fff;
     }
 }
 
-.team-link-icon{
+.team-contacts__icon{
     width: 20px;
     height: 20px;
     fill: var(--team-icon-color);
 }
 
-.team-contacts-part{
+.team-contacts__part{
     &:not(:last-child){
     margin-right: 10px;
     }
+}
+
+.team__title{
+    margin-bottom: 50px;
 }

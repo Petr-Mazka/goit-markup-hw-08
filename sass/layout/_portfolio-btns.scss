@@ -1,6 +1,6 @@
 // -=-> КНОПКИ ПОРТФОЛИО
 
-.p-sort-button{
+.p-buttons__sort{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -22,12 +22,15 @@
 }
 
 .p-buttons{
-    margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
 
-.p-button{
+.p-main__buttons{
+    margin-bottom: 50px;
+}
+
+.p-buttons__btn{
     &:not(:last-child){
     margin-right: 8px;
     }
