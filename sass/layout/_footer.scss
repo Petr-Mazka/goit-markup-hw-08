@@ -1,0 +1,181 @@
+// -=-> ФУТЭР
+
+.footer{
+    background-color: var(--hero-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-nav{
+    margin-bottom: 9px;
+}
+
+.web-studio-footer{
+    margin-bottom: 20px;
+}
+
+.footer-logo-studio{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #fff;
+}
+
+.footer-logo{
+    text-decoration: none;
+}
+
+.footer-link-map{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.f-link:hover,
+.f-link:focus{
+    color: var(--accent-text-color);
+}
+
+.join-list{
+    display: flex;
+    justify-content: center;
+}
+
+.join-link{
+    width: 44px;
+    height: 44px;
+    background-color: var(--join-link-bgc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 16px;
+}
+
+.join-link:hover,
+.join-link:focus{
+    background-color: var(--accent-text-color);
+}
+
+.join-link:hover .join-link-icon,
+.join-link:focus .join-link-icon{
+    fill: #fff;
+}
+
+.join-link-icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--main-background-color);
+}
+
+.join-contacts-part:not(:last-child){
+    margin-right: 10px;
+}
+
+.footer > .container{
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-join{
+    margin-left: 70px;
+}
+
+.join-text{
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+}
+
+.mailing{
+    margin-left: 93px;
+}
+
+.mailing-text{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.mail-input{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+    width: 358px;
+    height: 50px;
+    padding-top: 15px;
+    padding-right: 16px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    color: white;
+    margin-top: 20px;
+}
+
+.mail-input::placeholder{
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.mailing-button{
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    position: relative;
+    text-align: left;
+    padding-left: 29px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.mailing-button:hover,
+.mailing-button:focus{
+    background-color: #188CE8;
+}
+
+.mailing-button::after{
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/svg/send.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 28px;
+    top: 13px;
+    bottom: 13px;
+}

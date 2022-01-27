@@ -1,0 +1,28 @@
+// -=-> BASE
+
+@import './base/reset';
+@import './base/common';
+
+// -=-> COMPONENTS
+
+@import './components/container';
+@import './components/section';
+@import './components/section-title';
+
+// -=-> LAYOUT
+
+@import './layout/header';
+@import './layout/footer';
+@import './layout/hero';
+@import './layout/specialities';
+@import './layout/activity';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/modal';
+@import './layout/portfolio-btns';
+@import './layout/portfolio-gallery';
+
+// -=-> UTILS
+
+@import './utils/_variables.sccs';
+@import './utils/hidden';
