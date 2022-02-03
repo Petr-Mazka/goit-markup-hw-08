@@ -14,3 +14,10 @@ button{
     transition-duration: var(--primary-tzn-duration);
     transition-timing-function: var(--primary-tzn-tfunction);
 }
+
+.is-hidden--modifier,
+  .mobile-menu__container,
+  .mobile-menu{
+    transition-duration: var(--primary-tzn-duration);
+    transition-timing-function: var(--primary-tzn-tfunction);
+}

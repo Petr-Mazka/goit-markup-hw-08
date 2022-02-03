@@ -11,6 +11,7 @@
     --team-icon-color: #AFB1B8;
     --join-icon-color: #fff;
     --join-link-bgc: rgba(255, 255, 255, 0.1);
+    --accent-logo-color: #2196F3;
     --primary-tzn-duration: 250ms;
     --primary-tzn-tfunction: cubic-bezier(0.4, 0, 0.2, 1);
 }
