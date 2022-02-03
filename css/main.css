@@ -55,6 +55,7 @@ button {
   position: relative;
   display: block;
   width: 480px;
+  width: 100%;
   height: 60px;
   border-bottom: 1px solid #ECECEC;
   padding-top: 10px;
@@ -249,6 +250,156 @@ button {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   margin-right: 9px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    height: 80px;
+    min-width: 768px;
+    width: 100%;
+  }
+  .header--modifier {
+    height: 38px;
+  }
+  .nav {
+    height: 38px;
+    width: 768px;
+  }
+  .header-button {
+    display: none;
+  }
+  .site-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 88px;
+  }
+  .site-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .site-nav__part {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+  }
+  .site-nav__part:hover, .site-nav__part:focus {
+    color: var(--accent-text-color);
+  }
+  .main-page--modifier {
+    color: var(--accent-text-color);
+    position: relative;
+  }
+  .main-page--modifier::after {
+    content: '';
+    position: absolute;
+    width: 48.63px;
+    height: 4px;
+    background-color: var(--accent-text-color);
+    border-radius: 2px;
+    left: 0;
+    top: 45px;
+  }
+  .site-contacts {
+    display: block;
+  }
+  .nav__contacts {
+    margin-left: auto;
+    margin-right: 15px;
+    width: 138px;
+    height: 38px;
+  }
+  .site-contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .site-contacts__part {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  .site-contacts__part:hover, .site-contacts__part:focus {
+    color: var(--accent-text-color);
+  }
+  .site-contacts__part:hover .site-contacts__icon, .site-contacts__part:focus .site-contacts__icon {
+    fill: var(--accent-text-color);
+  }
+  .nav--first-icon {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+    fill: var(--team-icon-color);
+  }
+  .nav--second-icon {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+    fill: var(--team-icon-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    height: 80px;
+    min-width: 1600px;
+    width: 100%;
+  }
+  .header--modifier {
+    height: 31px;
+    align-items: center;
+  }
+  .nav {
+    height: 31px;
+    width: 1600px;
+  }
+  .site-nav {
+    margin-left: 93px;
+    margin-right: 305px;
+  }
+  .site-contacts {
+    display: flex;
+    align-items: baseline;
+  }
+  .nav__contacts {
+    display: flex;
+    align-items: baseline;
+    margin-left: auto;
+    margin-right: 215px;
+    min-width: 334px;
+    height: 31px;
+  }
+  .nav__logoweb {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .nav__logostudio {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .nav__logo {
+    margin-left: 215px;
+  }
+  .site-contacts__part {
+    display: flex;
+    align-items: baseline;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .site-contacts__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .nav--first-icon, .nav--second-icon {
+    margin-right: 10px;
+  }
 }
 
 .backdrop {
