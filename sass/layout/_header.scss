@@ -4,6 +4,7 @@
     position: relative;
     display: block;
     width: 480px;
+    width: 100%;
     height: 60px;
     border-bottom: 1px solid #ECECEC;
     padding-top: 10px;
@@ -199,4 +200,100 @@
     margin-right: 9px;
 }
 
+@media screen and (min-width: 768px){
+    .header{
+        padding-top: 21px;
+        padding-bottom: 21px;
+        height: 80px;
+        min-width: 768px;
+        width: 100%;
+    }
+    .header--modifier{
+        height: 38px;
+    }
+    .nav{
+        height: 38px;
+        width: 768px;
+    }
+    .header-button{
+        display: none;
+    }
+    .site-nav{
+        display: flex;
+        align-items: center;
+        margin-left: 88px;
+    }
+    .site-nav__item{
+        &:not(:last-child){
+        margin-right: 50px;
+        }
+    }
+    .site-nav__part{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: #212121;
+        text-decoration: none;
+        &:hover, &:focus{
+            color: var(--accent-text-color);
+        }
+    }
+    .main-page--modifier{
+        color: var(--accent-text-color);
+        position: relative;
+        &::after{
+            content:'';
+            position: absolute;
+            width: 48.63px;
+            height: 4px;
+            background-color: var(--accent-text-color);
+            border-radius: 2px;
+            left: 0;
+            top: 45px;  
+        }
+    }
+    .site-contacts{
+        display: block;
+    }
+    .nav__contacts{
+        margin-left: auto;
+        margin-right: 15px;
+        width: 138px;
+        height: 38px;
+    }
+    .site-contacts__item{
+        &:not(:last-child){
+        margin-bottom: 10px;
+        }
+    }
+    .site-contacts__part{
+        color: var(--primary-text-color);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        &:hover, &:focus{
+            color: var(--accent-text-color);
+        }
+        &:hover .site-contacts__icon, &:focus .site-contacts__icon{
+            fill: var(--accent-text-color);
+        }
+    }
+    .nav--first-icon{
+        width: 14px;
+        height: 10px;
+        margin-right: 8px;
+        fill: var(--team-icon-color);
+    }
+    .nav--second-icon{
+        width: 10px;
+        height: 14px;
+        margin-right: 8px;
+        fill: var(--team-icon-color);
+    }
+}
 

@@ -345,63 +345,6 @@ button {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    height: 80px;
-    min-width: 1600px;
-    width: 100%;
-  }
-  .header--modifier {
-    height: 31px;
-    align-items: center;
-  }
-  .nav {
-    height: 31px;
-    width: 1600px;
-  }
-  .site-nav {
-    margin-left: 93px;
-    margin-right: 305px;
-  }
-  .site-contacts {
-    display: flex;
-    align-items: baseline;
-  }
-  .nav__contacts {
-    display: flex;
-    align-items: baseline;
-    margin-left: auto;
-    margin-right: 215px;
-    min-width: 334px;
-    height: 31px;
-  }
-  .nav__logoweb {
-    font-size: 26px;
-    line-height: 1.19;
-  }
-  .nav__logostudio {
-    font-size: 26px;
-    line-height: 1.19;
-  }
-  .nav__logo {
-    margin-left: 215px;
-  }
-  .site-contacts__part {
-    display: flex;
-    align-items: baseline;
-    font-size: 14px;
-    line-height: 1.14;
-  }
-  .site-contacts__item:not(:last-child) {
-    margin-right: 30px;
-  }
-  .nav--first-icon, .nav--second-icon {
-    margin-right: 10px;
-  }
-}
-
 .backdrop {
   position: fixed;
   top: 0;
