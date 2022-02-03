@@ -1,35 +1,11 @@
 // -=-> ХЭДЭР
 
 .header{
-    padding-top: 24px;
-    padding-bottom: 25px;
+    width: 480px;
+    height: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border: 1px solid #ECECEC;
-    height: 80px;
-}
-
-.site-contacts{
-    display: flex;
-    align-items: baseline;
-}
-
-.nav__contacts{
-    margin-left: auto;
-}
-
-.nav{
-    display: flex;
-    align-items: center;
-}
-
-.site-contacts__item{
-    &:not(:last-child){
-    margin-right: 50px;
-    }
-}
-
-.site-nav{
-    display: flex;
-    align-items: center;
 }
 
 .header--modifier{
@@ -37,88 +13,14 @@
     align-items: center;
 }
 
-.site-nav__item{
-    &:not(:last-child){
-    margin-right: 50px;
-    }
+.nav{
+    display: flex;
+    align-items: center; 
 }
 
 .nav__logo{
     text-decoration: none;
     display: flex;
-    margin-right: 93px;
+    margin-right: 284px;
 }
 
-.nav__logoweb{
-    color: var(--accent-text-color);
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19; 
-    letter-spacing: 0.03em; 
-}
-
-.nav__logostudio{
-    color: var(--title-text-color) ;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;  
-    letter-spacing: 00.03em; 
-}
-
-.site-nav__part{
-    color: var(--title-text-color);    
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    &:hover, &:focus{
-        color: var(--accent-text-color);
-    }
-}
-
-.site-contacts__part{
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    &:hover, &:focus{
-        color: var(--accent-text-color);
-    }
-    &:hover .site-contacts__icon, &:focus .site-contacts__icon{
-        fill: var(--accent-text-color);
-    }
-}
-
-.nav--first-icon{
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: var(--team-icon-color);
-}
-
-.nav--second-icon{
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: var(--team-icon-color);
-}
-
-.main-page--modifier{
-    color: var(--accent-text-color);
-    position: relative;
-    &::after{
-        content:'';
-        position: absolute;
-        width: 48.63px;
-        height: 4px;
-        background-color: var(--accent-text-color);
-        border-radius: 2px;
-        left: 0;
-        top: 45px;  
-    }
-}
