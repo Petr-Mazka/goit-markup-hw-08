@@ -1,11 +1,10 @@
 // -=-> ХЭДЭР
 
 .header{
+    display: block;
     width: 480px;
     height: 60px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header--modifier{
@@ -15,12 +14,15 @@
 
 .nav{
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 .nav__logo{
     text-decoration: none;
     display: flex;
-    margin-right: 284px;
+}
+
+.nav__logoweb{
+    
 }
 
