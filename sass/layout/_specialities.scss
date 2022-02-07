@@ -16,6 +16,9 @@
     &:not(:last-child){
         margin-bottom: 30px;
     }
+    &:last-child{
+        padding-bottom: 60px;
+    }
 }
 
 .first-quality--modifier{
@@ -110,6 +113,9 @@
         &:nth-child(2n+1){
             margin-right: 30px;
         }
+        &:last-child{
+            padding-bottom: 0;
+        }
     }
 
     .quality-section__container{
@@ -133,6 +139,9 @@
         width: 270px;
         &:not(:last-child){
             margin-right: 30px;
+        }
+        &:last-child{
+            padding-bottom: 0;
         }
     }
 
