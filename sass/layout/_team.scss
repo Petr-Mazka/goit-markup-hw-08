@@ -2,7 +2,6 @@
 
 .team-section{
     background-color: var(--team-background-color);  
-    max-width: 480px;
 }
 
 .section--modifier{
@@ -38,4 +37,127 @@
 .team-images__image{
     display: block;
     width: 450px;
+    height: 460px;
+}
+
+.team-names{
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+
+.team-images__head{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+}
+
+.team-images__text{
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.team-contacts{
+    display: flex;
+    justify-content: center;
+}
+
+.team-contacts__part{
+    &:not(:last-child){
+    margin-right: 10px;
+    }
+}
+
+.team-contacts__link{
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 16px;
+    &:hover, &:focus{
+        background-color: var(--accent-text-color);
+    }
+    &:hover .team-contacts__icon, &:focus .team-contacts__icon{
+        fill: #fff;
+    }
+}
+
+.team-contacts__icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--team-icon-color);
+}
+
+@media screen and (min-width: 768px){
+    .team-images{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 740px;
+    }
+
+    .team__card{
+        display: flex;
+        justify-content: center;
+    }
+
+    .team-images__item{
+        &:not(:last-child){
+            margin-bottom: 0px;
+        } 
+        &:nth-child(-n+2){
+            margin-bottom: 30px;
+        }
+        &:nth-child(2n-1){
+            margin-right: 30px;
+        }
+    }
+
+    .team-images__image{
+        display: block;
+        width: 354px;
+        height: 374px;
+    } 
+}
+
+@media screen and (min-width: 1200px){
+    .team-images{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .team-images__item{
+        &:not(:last-child){
+            margin-bottom: 0px;
+        } 
+        &:nth-child(-n+2){
+            margin-bottom: 0px;
+        }
+        &:nth-child(2n-1){
+            margin-right: 0px;
+        }
+        &:not(:last-child){
+            margin-right: 30px;
+        } 
+    }
+
+    .team-images__image{
+        display: block;
+        width: 270px;
+        height: 260px;
+    }
 }

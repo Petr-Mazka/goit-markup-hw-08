@@ -9,6 +9,7 @@
 
 .quality-section__container{
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .main-qualities__part{
@@ -17,7 +18,7 @@
         margin-bottom: 30px;
     }
     &:last-child{
-        padding-bottom: 60px;
+        padding-bottom: 0px;
     }
 }
 
@@ -114,7 +115,7 @@
             margin-right: 30px;
         }
         &:last-child{
-            padding-bottom: 0;
+            padding-bottom: 0px;
         }
     }
 

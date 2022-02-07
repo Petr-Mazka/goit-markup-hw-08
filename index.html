@@ -14,7 +14,7 @@
     <link rel="stylesheet"  href="./css/main.min.css">  
 </head>
 <body> 
-    <!--Хэдэр-->  
+<!--Хэдэр-->  
     <header class="header">
         <div class="section__container header--modifier">
         <nav class="nav header__nav">
@@ -94,14 +94,14 @@
         <script src="./js/mobile-menu.js"></script>
     </header>
  <main>
-     <!-- Герой -->
+<!-- Герой -->
      <section class="hero hero--modifier">
          <div class="section__container hero--container">
          <h1 class="hero-title hero__text">Эффективные решения<br> для вашего бизнеса</h1>
          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
          </div>
      </section>
-     <!-- Особенности -->
+<!-- Особенности -->
      <section class="quality-section qualities--modifier">    
          <div class="section__container quality-section__container">
          <h2 class="hidden-one">Особенности</h2>
@@ -128,24 +128,82 @@
 
 
 
-    <!-- Род занятий -->
+<!-- Род занятий -->
      <section class="activity-section activity--modifier">
          <div class="activity section__container">
          <h2 class="section-title activity__title">Чем мы занимаемся</h2>    
          <ul class="activity-images">  
-             <li class="activity-images_item"><img src="./images/jpeg3-squoosh.jpg" alt="телефон и ноутбук" width="370"><p class="activity-images_text">Десктопные приложения</p></li>         
-             <li class="activity-images_item"><img src="./images/jpeg1-squoosh.jpg" alt="планшет" width="370"><p class="activity-images_text">Мобильные приложения</p></li>
-             <li class="activity-images_item"><img src="./images/jpeg2-squoosh.jpg" alt="программирование" width="370"><p class="activity-images_text">Дизайнерские решения</p></li>                 
+            <li class="activity-images_item">
+                <picture>
+                    <source
+                      srcset="./images/activity/jpeg3-squoosh.jpg 1x, ./images/activity/jpeg3x2-squoosh.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img 
+                    src="./images/jpeg3-squoosh.jpg" 
+                    alt="телефон и ноутбук" 
+                    width="370">
+                </picture>
+                <p class="activity-images_text">Десктопные приложения</p>
+            </li>         
+            <li class="activity-images_item">
+                <picture >
+                    <source
+                      srcset="./images/activity/jpeg1-squoosh.jpg 1x, ./images/activity/jpeg1x2-squoosh.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img 
+                    src="./images/jpeg1-squoosh.jpg" 
+                    alt="телефон и ноутбук" 
+                    width="370">
+                </picture>
+                <p class="activity-images_text">Мобильные приложения</p>
+            </li>
+            <li class="activity-images_item">
+                <picture>
+                    <source
+                      srcset="./images/activity/jpeg2-squoosh.jpg 1x, ./images/activity/jpeg2x2-squoosh.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <img 
+                    src="./images/jpeg2-squoosh.jpg" 
+                    alt="телефон и ноутбук" 
+                    width="370">
+                </picture>
+                 <p class="activity-images_text">Дизайнерские решения</p>
+            </li>                 
          </ul>     
          </div>       
      </section> 
-     <!-- Наша команда -->
+<!-- Наша команда -->
      <section class="team-section section--modifier">
          <div class="team section__container">
          <h2 class="section-title team__title">Наша команда</h2>
+         <div class="team__card">
          <ul class="team-images">
              <li class="team-images__item">
-                 <img srcset="./images/team/first-person.jpg x1, ./images/team/first-personx2.jpg x2" src="./images/team/first-person.jpg" alt="Игорь Демьяненко" width="270" class="team-images__image ">
+                <picture class="team-images__image">
+                    <source
+                      srcset="./images/team/desktop/first-person_dp.jpg 1x, ./images/team/desktop/first-personx2_dp.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/team/tablet/first-person_tt.jpg 1x, ./images/team/tablet/first-personx2_tt.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/team/first-person.jpg 1x, ./images/team/first-personx2.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/team/first-person.jpg"
+                      loading="lazy"
+                      alt="Мужчина в очках и с бородой"
+                      title="Игорь Демьяненко"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                  <div class="team-names">
                 <h3 class="team-images__head">Игорь Демьяненко</h3>
                 <p lang="en" class="team-images__text">Product Designer</p>
@@ -182,7 +240,28 @@
                 </div>
                 </li>
              <li class="team-images__item">
-                 <img src="./images/team/second-person.jpg" alt="Ольга Репина" width="270" class="team-images__image">
+                <picture class="team-images__image">
+                    <source
+                      srcset="./images/team/desktop/second-person_dp.jpg 1x, ./images/team/desktop/second-personx2_dp.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/team/tablet/second-person_tt.jpg 1x, ./images/team/tablet/second-personx2_tt.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/team/second-person.jpg 1x, ./images/team/second-personx2.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/team/second-person.jpg"
+                      loading="lazy"
+                      alt="Мужчина в очках и с бородой"
+                      title="Игорь Демьяненко"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                  <div class="team-names">
                  <h3 class="team-images__head">Ольга Репина</h3>
                  <p lang="en" class="team-images__text">Frontend Developer</p>
@@ -219,7 +298,28 @@
                  </div>
                 </li>
              <li class="team-images__item">
-                 <img src="./images/team/third-person.jpg" alt="Николай Тарасов" width="270"  class="team-images__image">
+                <picture class="team-images__image">
+                    <source
+                      srcset="./images/team/desktop/third-person_dp.jpg 1x, ./images/team/desktop/third-personx2_dp.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/team/tablet/third-person_tt.jpg 1x, ./images/team/tablet/third-personx2_tt.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/team/third-person.jpg 1x, ./images/team/third-personx2.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/team/third-person.jpg"
+                      loading="lazy"
+                      alt="Мужчина в очках и с бородой"
+                      title="Игорь Демьяненко"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                  <div class="team-names">
                  <h3 class="team-images__head">Николай Тарасов</h3>
                  <p lang="en" class="team-images__text">Marketing</p>
@@ -256,7 +356,28 @@
                  </div>
                 </li>
              <li class="team-images__item">
-                 <img src="./images/team/fourth-person.jpg" alt="Михаил Ермаков" width="270"  class="team-images__image">
+                <picture class="team-images__image">
+                    <source
+                      srcset="./images/team/desktop/fourth-person_dp.jpg 1x, ./images/team/desktop/fourth-personx2_dp.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/team/tablet/fourth-person_tt.jpg 1x, ./images/team/tablet/fourth-personx2_tt.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/team/fourth-person.jpg 1x, ./images/team/fourth-personx2.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/team/fourth-person.jpg"
+                      loading="lazy"
+                      alt="Мужчина в очках и с бородой"
+                      title="Игорь Демьяненко"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                  <div class="team-names">
                  <h3 class="team-images__head">Михаил Ермаков</h3>
                  <p lang="en" class="team-images__text">UI Designer</p>
@@ -292,12 +413,13 @@
                 </ul>
                  </div>
                 </li>
-         </ul> 
+         </ul>
+         </div> 
          </div>         
      </section>
 
 
-     <!-- Постоянные клиенты 
+<!-- Постоянные клиенты -->
      <section class="clients-section section--modifier">
          <div class="clients section__container">
              <h2 class="section-title clients__title"> Постоянные клиенты</h2>
@@ -348,7 +470,7 @@
          </div>
      </section>
  </main> 
-     Футэр
+     <!-- Футэр 
      <footer class="footer">
         <div class="footer-box section__container">
             <div class="footer-info">
