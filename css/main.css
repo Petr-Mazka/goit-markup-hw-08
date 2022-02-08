@@ -1270,16 +1270,16 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #fff;
   position: absolute;
   top: 50%;
@@ -1320,11 +1320,13 @@ button {
 .modal-content__title {
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+  width: 370px;
+  height: 60px;
 }
 
 .form-labels__label-name {
@@ -1335,7 +1337,7 @@ button {
 }
 
 .form-labels__input-name {
-  width: 448px;
+  width: 370px;
   margin-top: 4px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1360,8 +1362,8 @@ button {
 
 .modal-forms {
   display: block;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
 }
 
 .form-labels {
@@ -1375,7 +1377,7 @@ button {
 
 .form-container {
   display: block;
-  max-width: 448px;
+  max-width: 370px;
 }
 
 .form-agreement {
@@ -1388,7 +1390,7 @@ button {
 }
 
 .form-labels__comment {
-  width: 448px;
+  width: 370px;
   height: 120px;
   resize: none;
   margin-top: 4px;
@@ -1450,8 +1452,8 @@ button {
 }
 
 .form-agreement__container {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   align-items: center;
@@ -1537,6 +1539,50 @@ button {
 .modal {
   transition-duration: var(--primary-tzn-duration);
   transition-timing-function: var(--primary-tzn-tfunction);
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    width: 528px;
+    height: 581px;
+    width: 100%;
+    height: 100%;
+  }
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+  .modal-content__title {
+    width: 448px;
+    height: 2px;
+    line-height: 1.15;
+  }
+  .form-labels__input-name {
+    width: 448px;
+  }
+  .modal-forms {
+    width: 528px;
+    height: 581px;
+  }
+  .form-container {
+    width: 448px;
+  }
+  .form-labels__comment {
+    width: 448px;
+  }
+  .form-agreement__container {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .form-labels {
+    width: 448px;
+  }
+  .modal-content {
+    height: 501px;
+  }
+  .form-container {
+    min-width: 448px;
+  }
 }
 
 :root {
