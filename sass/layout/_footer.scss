@@ -1,2 +1,252 @@
 // -=-> ФУТЭР
 
+.footer{
+    background-color: var(--hero-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    & > .section__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo__container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo-box__logo{
+    text-decoration: none;
+}
+
+.logo-box__web{
+    color: var(--accent-text-color);
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.17; 
+    letter-spacing: 0.03em; 
+}
+
+.logo-box__studio{
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #fff;
+}
+
+.adress{
+    display: flex;
+    justify-content: center;
+}
+
+.adress-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.adress-list__nav{
+    display: flex;
+    justify-content: center;
+    &:not(:last-child){
+    margin-bottom: 8px;
+    }
+}
+
+.adress-list__map{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    &:hover, &:focus{
+        color: var(--accent-text-color);
+    }
+}
+
+.adress-list__link{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    text-align: center;
+    &:hover, &:focus{
+        color: var(--accent-text-color);
+    }
+}
+
+.footer__links{
+    margin-bottom: 60px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.join-text{
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.footer-join__text{
+    margin-bottom: 20px;
+}
+
+.join-list{
+    display: flex;
+    justify-content: center;
+}
+
+.join-list__part{
+    &:not(:last-child){
+    margin-right: 10px;
+    }
+}
+
+.join-list__link{
+    width: 44px;
+    height: 44px;
+    background-color: var(--join-link-bgc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    &:hover, &:focus{
+        background-color: var(--accent-text-color);
+    }
+    &:hover .join-list__icon, &:focus .join-list__icon{
+        fill: #fff;
+    }
+}
+
+.join-list__icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--main-background-color);
+}
+
+.footer__mailing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mailing-text-container{
+    display: flex;
+    justify-content: center;
+}
+
+.mailing-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mailing-text{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.mailing-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mailing-form__label{
+    display: flex;
+    justify-content: center;
+}
+
+.mailing-form__input{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+    width: 450px;
+    height: 50px;
+    padding-top: 15px;
+    padding-right: 16px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    color: white;
+    margin-top: 20px;
+    &::placeholder{
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.mailing-button__container{
+    display: flex;
+    justify-content: center;
+}
+
+.mailing-button{
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    position: relative;
+    text-align: left;
+    padding-left: 29px;
+    cursor: pointer;
+    &:hover, &:focus{
+        background-color: #188CE8;
+    }
+    &::after{
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/svg/send.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 28px;
+    top: 13px;
+    bottom: 13px;
+    }
+}
+
+.mailing-form__button{
+    margin-top: 20px;
+}
+
+
