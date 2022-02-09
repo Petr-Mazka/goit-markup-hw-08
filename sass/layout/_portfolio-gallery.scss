@@ -1,7 +1,9 @@
 // -=-> ГАЛЛЕРЕЯ ПОРТФОЛИО
 
 .p-main-images{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .p-main-images__img{
@@ -80,4 +82,86 @@
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 768px){
+    .p-cards{
+        display: flex;
+        justify-content: center;
+    }
+
+    .p-main-images{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 740px;
+    }
+
+    .p-main-images__img{
+        max-width: 354px;
+        height: 404px;
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+        &:nth-child(2n-1){
+            margin-right: 30px;
+        }
+    }
+
+    .card-info {
+        padding: 49px 24px;
+    }
+
+    .card-info--modifier{
+        padding: 20px 24px 56px 24px;
+    }
+
+    .top-pickture--modifier{
+        height: 440px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .p-cards{
+        display: flex;
+        justify-content: center;
+    }
+
+    .p-main-images{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1170px;
+    }
+
+    .p-main-images__img{
+        max-width: 370px;
+        height: 404px;
+        &:not(:last-child){
+            margin-bottom: 0px;
+        }
+        &:nth-child(2n-1){
+            margin-right: 0px;
+        }
+        &:not(:nth-child(3n + 3)){
+            margin-right: 30px;
+        }
+        &:not(:nth-last-child(-n + 3)){
+            margin-bottom: 30px;
+        }
+    }
+
+    .card-info--modifier{
+        padding: 20px 24px 20px 24px;
+    }
+
+    .top-pickture--modifier{
+        height: 404px;
+    }
+
+    .card-info {
+        padding: 20px 24px;
+    }
 }

@@ -43,3 +43,10 @@
 .p-main__buttons{
     margin-bottom: 40px;
 }
+
+@media screen and (min-width: 768px){
+    .p-buttons{
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
