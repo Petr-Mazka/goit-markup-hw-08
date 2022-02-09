@@ -605,7 +605,7 @@ button {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2F303A;
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   padding-top: 15px;
   padding-right: 16px;
@@ -814,7 +814,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
 }
 
 .quality-section__container {
@@ -823,7 +823,7 @@ button {
 }
 
 .main-qualities__part {
-  width: 450px;
+  max-width: 450px;
 }
 
 .main-qualities__part:not(:last-child) {
@@ -1042,8 +1042,8 @@ button {
 
 .team-images__image {
   display: block;
-  width: 450px;
-  height: 460px;
+  max-width: 450px;
+  max-height: 460px;
 }
 
 .team-names {
@@ -1184,8 +1184,8 @@ button {
 .clients-list__link {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  width: 210px;
-  height: 92px;
+  max-width: 210px;
+  max-height: 92px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1200,8 +1200,8 @@ button {
 }
 
 .clients-list__icon {
-  width: 106px;
-  height: 60px;
+  max-width: 106px;
+  max-height: 60px;
   fill: var(--team-icon-color);
 }
 

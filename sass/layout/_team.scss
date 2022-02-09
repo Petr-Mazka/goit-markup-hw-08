@@ -36,8 +36,8 @@
 
 .team-images__image{
     display: block;
-    width: 450px;
-    height: 460px;
+    max-width: 450px;
+    max-height: 460px;
 }
 
 .team-names{

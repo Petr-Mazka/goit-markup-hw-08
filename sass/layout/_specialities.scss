@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
 }
 
 .quality-section__container{
@@ -13,7 +13,7 @@
 }
 
 .main-qualities__part{
-    width: 450px;
+    max-width: 450px;
     &:not(:last-child){
         margin-bottom: 30px;
     }
