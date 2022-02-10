@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 1200px){
     .activity--modifier{
-        padding-top: 94px;
+        padding-top: 34px;
         padding-bottom: 94px;
     }
 
@@ -53,6 +53,10 @@
         bottom: 0;
         align-items: center;
         justify-content: center;
+    }
+
+    .activity-section__container{
+        max-width: 1200px;
     }
 }
 

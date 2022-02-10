@@ -8,6 +8,7 @@
 .p-buttons{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 15px;
 }
 
 .p-buttons__sort{
@@ -48,5 +49,9 @@
     .p-buttons{
         flex-wrap: nowrap;
         justify-content: center;
+    }
+
+    .p-buttons{
+        margin-left: 0px;
     }
 }
