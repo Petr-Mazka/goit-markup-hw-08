@@ -157,6 +157,7 @@
     }
 
     .main-qualities__part{
+        margin-bottom: 0;
         width: 270px;
         &:not(:last-child){
             margin-right: 30px;
@@ -164,10 +165,13 @@
         &:last-child{
             padding-bottom: 0;
         }
+        &:not(:last-child){
+            margin-bottom: 0px;
+        }
     }
 
     .quality-section__container{
-        padding-top: 60px;
+        padding-top: 94px;
         max-width: 1200px;
     }   
 
