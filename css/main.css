@@ -1717,7 +1717,7 @@ button {
   }
   .modal-content__title {
     width: 448px;
-    height: 2px;
+    height: 21px;
     line-height: 1.15;
   }
   .form-labels__input-name {
@@ -1736,6 +1736,7 @@ button {
   .form-agreement__container {
     font-size: 14px;
     line-height: 1.71;
+    height: 15px;
   }
   .form-labels {
     width: 448px;
@@ -1745,6 +1746,7 @@ button {
   }
   .form-container {
     min-width: 448px;
+    height: 479px;
   }
 }
 
