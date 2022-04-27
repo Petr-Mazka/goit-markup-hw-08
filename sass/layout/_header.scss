@@ -388,4 +388,11 @@
     .header__container{
         max-width: 1200px;
     }
+
+    .main-page--modifier{
+        &::after{
+            content:'';
+            top: 46px;  
+        }
+    }
 }
